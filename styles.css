@@ -1,0 +1,333 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Navbar */
+.navbar-logo {
+    width: 60px;
+    height: auto;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    padding: 10px;
+}
+
+.hero-content h1 {
+    font-size: 4.2rem;
+    font-family: "Copperplate Gothic Bold", serif;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+}
+
+.hero-content .btn {
+    font-size: 1.2rem;
+}
+
+#quienes-somos p {
+    font-size: 1.3rem;
+}
+
+/* SECCIÓN TARJETAS */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body h4,
+.card-body h5 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Estilo general para la sección */
+#nosotros {
+    background-color: #f9f9f9;
+}
+
+/* Card - Ajuste de sombras y bordes redondeados */
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen circular con tamaño ajustado */
+#nosotros img.rounded-circle {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid #ddd;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+#nosotros img.rounded-circle:hover {
+    transform: scale(1.1);
+    border-color: #00b4d8;
+}
+
+/* Nombres y descripciones */
+#nosotros h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#nosotros p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* Ajuste de márgenes y espaciado en columnas */
+#nosotros .card-body {
+    padding: 20px;
+}
+
+#nosotros .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 767px) {
+    #nosotros .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    #nosotros img.rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    #nosotros h5 {
+        font-size: 1.1rem;
+    }
+
+    #nosotros p {
+        font-size: 0.85rem;
+    }
+}
+
+  /* Tarjetas personalizadas */
+        .card-overlay {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 500px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .card-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Capa de opacidad */
+            z-index: 1;
+        }
+
+        .card-overlay .card-body {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+        }
+
+
+
+/* Tarjetas de Misión, Visión y Valores */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body h4 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+
+/* Servicios Section */
+.card-img-top {
+    height: 200px; /* Fija la altura */
+    object-fit: cover; /* Asegura que las imágenes no se deformen */
+}
+
+/* Agrega sombras suaves a las tarjetas */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* PARTNERS */
+#partners img {
+    max-height: 80px;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#partners img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* CONTACTO */
+.social-icons i {
+    font-size: 2rem;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.1);
+    color: #00b4d8;
+}
+
+iframe {
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon {
+    width: 35px;
+    height: 35px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    /* Ajustes generales */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-content .btn {
+        font-size: 1rem;
+    }
+
+    #nosotros img.rounded-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    iframe {
+        height: 150px;
+    }
+
+    .social-icons {
+        margin-bottom: 20px;
+    }
+
+    .navbar-logo {
+        width: 80px;
+    }
+}
